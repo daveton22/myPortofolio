@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@theme {
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-quicksand: "Quicksand", sans-serif;
+
+  --color-primary: #222831;
+  --color-secondary: #eeeeee;
+  --color-tertiary: #00adb5;
+
+  --box-shadow-custom-dark: 2px 2px 21px -1px rgba(0, 0, 0, 0.75);
+
+  --animation-rotate-slow: rotate-slow 3s ease forwards;
+  --animation-rotate-medium: rotate-medium 3s ease forwards;
+  --animation-rotate-fast: rotate-fast 3s ease forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary);
+}
+
+@keyframes right-appear {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes text-appear-from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-appear-from-bottom {
+  animation: text-appear-from-bottom 0.3s ease-in-out;
+}
+
+.right-appear {
+  animation: right-appear 0.5s ease-in-out;
+  animation-timeline: view();
+}
+
+.cv {
+  left: 0px;
+}
+
+@media (max-width: 768px) {
+  .menu-closed {
+    right: -100vw;
+    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+  }
+  .menu-open {
+    right: 0;
+    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+  }
+}
+
+.open {
+  opacity: 0;
+}
+.closed {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#whatsapp {
+  opacity: 0;
+}
+
+#contactMe:hover #whatsapp {
+  opacity: 1;
+}
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.scrolled {
+  background-color: #222831;
+  z-index: 1000;
+  height: 5rem;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #f7fafc;
+}
+
+.scrolled2 {
+  background-color: #222831;
+  height: 4.6rem;
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transform: translateX(13%);
+  top: 1rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+}
+
+.white {
+  color: #f7fafc;
+}
+
+.fa-arrow-up-righ {
+  font-size: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff; /* Putih */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+  border-radius: 0.5rem; /* Sudut membulat */
+  overflow: hidden; /* Sembunyikan overflow */
+}
+
+.card-image {
+  width: 100%; /* Lebar penuh */
+  height: 12rem; /* Tinggi tetap */
+  object-fit: cover; /* Sesuaikan gambar */
+}
+
+.card-description {
+  padding: 1rem; /* Padding */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font */
+  font-weight: bold; /* Tebal */
+}
+
+.card-text {
+  color: #4a5568; /* Warna teks abu-abu */
+}
+@keyframes skill-animation-in {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes project-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes project-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.project-left {
+  animation: project-left 0.8s ease-in-out;
+}
+
+.project-right {
+  animation: project-right 0.8s ease-in-out;
+}
+
+.animateSkill {
+  animation: skill-animation-in 0.8s ease-in-out forwards;
+}
+
+.fa-solid {
+  color: #00adb5;
+  font-size: 1.5rem;
+}
+
+#postersProject {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+#postersProject::-webkit-scrollbar {
+  height: 8px;
+}
+
+#postersProject::-webkit-scrollbar-thumb {
+  background-color: #047378;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+#postersProject::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#postersProject::-webkit-scrollbar-thumb:hover {
+  background: #00adb5;
+}

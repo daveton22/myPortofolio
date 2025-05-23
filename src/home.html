@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave-Portfolio</title>
+
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" type="image/png" href="../dist/icon/logo-02.png" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- <link rel="icon" href="../../dist/icon-skills/html.png" /> -->
+
+    <!-- <script src="dist/js/defr.js"></script> -->
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body
+    class="max-w-[1920px] h-[2000px] scroll-smooth flex flex-col bg-secondary"
+  >
+    <header
+      id="header"
+      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full m-auto items-center justify-between fixed top-0 z-[9999]"
+    >
+      <!-- Navbar -->
+      <div
+        class="mx-12 max-md:mx-5 logo transition-all duration-[800ms] ease-in-out"
+      >
+        <h1 class="text-2xl font-bold text-tertiary">&lt;Dave&gt;</h1>
+      </div>
+      <button
+        id="hamburger-button"
+        class="hidden z-[101] mr-9 cursor-pointer max-md:block"
+      >
+        <div id="hamburger-open" class="">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="hamburger-close" class="hidden">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </button>
+      <nav
+        id="nav-menu"
+        class="flex max-md:fixed max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-9 max-md:top-3 menu-closed"
+      >
+        <ul
+          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-white"
+        >
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
+            <a href="#home" class="underline-animation">Home</a>
+          </li>
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
+            <a href="#about" class="underline-animation">About</a>
+          </li>
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
+            <a href="#skills" class="underline-animation">Skills</a>
+          </li>
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
+            <a href="#projects" class="underline-animation">Projects</a>
+          </li>
+        </ul>
+        <a
+          href="../dist/CV/MyCV.pdf"
+          download="MyCV.pdf"
+          id="cvButton"
+          class="relative font-bold text-primary px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500 max-md:hidden"
+          onmouseover="hoverLeft()"
+          onmouseout="hoverRight()"
+        >
+          <span
+            id="hover"
+            class="absolute bottom-0 left-0 w-full h-full bg-primary z-0 transition-transform duration-500 transform translate-x-full"
+          ></span>
+          <span class="relative z-10"> Download CV </span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section
+        id="home"
+        class="flex w-full h-[34em] 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48"
+      >
+        <div
+          class="flex justify-between items-center w-full mt-10 max-md:mt-16 max-md:justify-center"
+        >
+          <div
+            class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+            data-aos="fade-right"
+          >
+            <h2
+              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
+            >
+              <span class="text-tertiary">Hi,</span> Saya
+              <span class="text-tertiary">Dave</span> Seorang
+            </h2>
+            <h2
+              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
+            >
+              Graphic Designer,<br />
+              Front End Web Maker, Editing
+            </h2>
+            <div
+              id="profileMobile"
+              class="w-[270px] h-[270px] relative hidden max-md:block max-md:mt-10"
+            >
+              <div
+                class="w-[270px] h-[270px] absolute border-solid border-[10px] border-primary bg-primary rounded-lg"
+              ></div>
+              <div
+                class="w-[270px] h-[270px] absolute shadow-xl border-solid border-[5px] border-primary bg-secondary rounded-lg"
+              >
+                <div class="absolute -translate-y-[7.1rem]">
+                  <img
+                    src="../dist/profilePicture/profilePicture.png"
+                    alt=""
+                    class="rounded-lg object-cover w-[250px] h-auto m-0 p-0"
+                  />
+                </div>
+              </div>
+            </div>
+            <p
+              class="text-primary font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
+            >
+              Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan
+              sedang fokus dalam mengembangkan skill desain dan editing.
+            </p>
+
+            <a
+              href="../dist/CV/CV_Dave.pdf"
+              download="CV_Dave.pdf"
+              class="hidden max-md:block font-bold text-tertiary"
+              >Download CV</a
+            >
+
+            <button
+              id="contactMe"
+              class="z-0 mt-5 relative font-bold text-lg p-2 border-solid border-2 border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2"
+            >
+              Contact me
+            </button>
+          </div>
+          <div
+            class="w-[600px] h-full relative max-md:w-0 max-md:hidden"
+            id="profileDekstop"
+            data-eos="fade-left"
+          >
+            <div
+              class="w-[280px] h-[280px] absolute right-[130px] top-[123px] border-solid border-[10px] border-primary bg-primary rounded-lg"
+            ></div>
+            <div
+              class="w-[280px] h-[280px] absolute right-36 shadow-xl top-32 border-solid border-[5px] border-primary bg-secondary rounded-lg"
+            >
+              <div class="absolute -translate-y-[8.4rem]">
+                <img
+                  src="../dist/profilePicture/profilePicture.png"
+                  alt=""
+                  class="rounded-lg object-cover w-full h-full m-0 p-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section
+        class="w-full bg-[#24272c] h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center shadow-custom-dark"
+        id="about"
+      >
+        <h2
+          class="text-secondary font-bold text-4xl mt-28 mb-7 max-md:mb-1 max-md:mt-[3.5em]"
+        >
+          About me
+        </h2>
+
+        <hr class="w-[80%] border-t-2 border-gray-600 mb-10" />
+
+        <div
+          class="items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-3 max-md:flex-col"
+        >
+          <div
+            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
+            data-aos="fade-right"
+          >
+            <div id="slider" class="w-[550%] h-auto flex">
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto2.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto3.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto4.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto5.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+            <div
+              id="prev-image"
+              class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
+            </div>
+            <div
+              id="next-image"
+              class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
+            </div>
+          </div>
+
+          <article class="ml-9 max-md:m-0" data-aos="fade-left">
+            <p
+              class="text-secondary opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
+            >
+              Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
+              November 2005 dan berasal dari maluku tenggara dan saat ini
+              menempuh pendidikan sebagai mahasiswa Informatika semester 3 dari
+
+              <span class="readMoreText max-md:hidden">
+                Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
+                pemahaman mengenai front end web. seperti html, css, javascript,
+                bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
+                saya masih tetap mengembangkan skill ini agar mampu menguasai
+                nya. saya juga aktif dalam mengikuti kegiatan seperti kursus
+                online maupun organisasi kampus.
+              </span>
+            </p>
+            <button
+              id="readMorebutton"
+              class="text-tertiary font-black hidden max-md:inline text-[9px]"
+            >
+              Read More
+            </button>
+            <hr />
+            <!-- Social Links -->
+            <div
+              id="linkList"
+              class="flex mt-4 max-md:flex max-md:justify-center"
+            >
+              <button
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9]"
+                onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+                ;
+              >
+                <i
+                  class="fa-brands fa-facebook fa-2x"
+                  style="color: #00adb5"
+                ></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        id="skills"
+        class="w-full flex flex-col items-center gap-x-12 bg-secondary font-quickSand"
+      >
+        <h2
+          class="text-primary font-bold text-4xl mb-4 mt-[2.9em] max-md:mt-[3.5em]"
+        >
+          Skills
+        </h2>
+        <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
+        <div class="flex w-[70%] max-md:w-full">
+          <div class="w-full max-md:pl-4" data-aos="fade-left">
+            <h2 class="text-primary text-2xl text-center">
+              Front End Languages
+            </h2>
+            <div
+              id="language"
+              class="flex flex-wrap w-[70%] max-md:w-full gap-8 max-md:gap-2 m-auto justify-center p-5"
+            >
+              <div
+                class="rounded-3xl flex flex-col items-center w-auto h-[1em] p-1 text-center skillCard"
+              >
+                <img
+                  class="w-12 max-md:w-8"
+                  src="../dist/icon-skills/html.png"
+                  alt="html"
+                />
+                <h2
+                  class="font-bold text-[14px] max-md:text-[9px] text-primary"
+                >
+                  HTML
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-md:pr-4" data-aos="fade-right">
+            <h2 class="text-primary text-2xl text-center">
+              Editing <br class="hidden max-md:block" />
+              Tools
+            </h2>
+            <div
+              id="tools"
+              class="flex flex-wrap w-[70%] max-md:w-full gap-8 max-md:gap-2 m-auto justify-center p-5"
+            >
+              <div
+                class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
+              >
+                <img
+                  class="w-12 max-md:w-8"
+                  src="../dist/icon-tools/git.png"
+                  alt="git"
+                />
+                <h2
+                  class="font-bold text-[14px] max-md:text-[9px] text-primary"
+                >
+                  Git
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Front end Project -->
+      <section
+        id="projects"
+        class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
+      >
+        <h2
+          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-2xl"
+        >
+          Web Project
+        </h2>
+
+        <hr class="w-[50%] border-t-2 border-gray-300 mb-10" />
+
+        <div
+          id="frontEndProject"
+          class="grid grid-cols-3 gap-20 max-w-[90%] h-auto max-md:p-5 md:grid max-md:grid-cols-2 justify-items-center mb-8 max-md:gap-y-5"
+        >
+          <div
+            class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
+            data-aos="fade-up"
+          >
+            <div class="rounded-lg">
+              <img
+                src="../dist/myProject/dicoding.png"
+                alt="project"
+                class="w-full h-[200px] max-md:h-[130px] rounded-lg text-white object-cover"
+              />
+            </div>
+
+            <div class="mt-2">
+              <a
+                class="text-tertiary font-semibold hover:opacity-0.8"
+                href="https://daveton22.github.io/FinalProjectDicoding/"
+                target="_blank"
+              >
+                Live Preview
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <p class="text-secondary text-[13px] max-md:text-[9px]">
+                Final Project Website menggunakan html, css dan javascript Pada
+                Kelas submission akhir Front end developer oleh Dicoding
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Graphic designer Project -->
+      <section
+        id="projects"
+        class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
+      >
+        <h2
+          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-2xl"
+        >
+          Graphic Design Project
+        </h2>
+
+        <hr class="w-[50%] border-t-2 border-gray-300 mb-4" />
+
+        <div
+          id="graphicDesignProject"
+          class="flex flex-col items-center justify-center"
+        >
+          <!-- Poster project -->
+
+          <h2
+            class="font-quickSand font-bold text-2xl text-tertiary m-5 max-md:m-1 max-md:text-center"
+          >
+            Posters
+          </h2>
+          <div
+            id="postersProject"
+            class="flex w-[41%] p-1 m-auto gap-x-4 scroll-pl-6"
+            data-aos="fade-up"
+          >
+            <div
+              class="rounded-lg min-w-[180px] max-md:min-w-[140px] snap-start snap-x"
+            >
+              <img
+                src="../dist/posters/MakrabIKNA2024-04.jpg"
+                alt="poster"
+                class="w-64 rounded-lg text-white object-cover"
+              />
+            </div>
+          </div>
+
+          <h2
+            class="font-quickSand font-bold text-2xl text-tertiary m-5 max-md:m-1 max-md:text-center"
+          >
+            Feed
+          </h2>
+          <!-- Feed project -->
+          <div
+            id="feedProject"
+            class="w-[72%] flex gap-5 max-md:w-[30%] max-md:gap-1 m-auto justify-center"
+            data-aos="fade-up"
+          >
+            <div class="flex flex-col gap-5 max-md:gap-1">
+              <img
+                src="../dist/feed/feedMakrab-03.jpg"
+                alt="feed"
+                class="w-[600px] rounded-lg text-white object-cover"
+              />
+              <img
+                src="../dist/feed/feedPaskah.jpg"
+                alt="feed"
+                class="w-[600px] rounded-lg text-white object-cover"
+              />
+              <img
+                src="../dist/feed/posterTahunbaru-02.jpg"
+                alt="feed"
+                class="w-[600px] rounded-lg text-white object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Majalah -->
+          <h2
+            class="font-quickSand font-bold text-2xl text-tertiary m-5 max-md:m-1 max-md:text-center"
+          >
+            Majalah
+          </h2>
+          <div
+            id="feedMajalah"
+            class="w-[40%] flex-wrap flex gap-5 max-md:w-[30%] max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-5 m-auto justify-center"
+            data-aos="fade-up"
+          >
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far2.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far3.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far4.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far5.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far6.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far7.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far8.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+            <div class="shadow-lg">
+              <img
+                src="../dist/majalah/5673_Daveton Piesco Far-Far9.jpg"
+                alt="1"
+                class="w-64 max-md:w-44 rounded-lg object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- More portfolio -->
+          <p
+            class="text-tertiary font-bold text-lg mt-10 mb-5 max-md:mt-5 max-md:mb-2 max-md:text-center hover:text-primary transition-all duration-200 ease-in-out"
+          >
+            <a
+              href="https://drive.google.com/drive/folders/1BiVuvLA_EiuSC7X3IJS68TpAczlyXc6f?usp=sharing"
+            >
+              Lihat Portofolio lainnya
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="contact"
+      class="flex flex-col justify-center items-center w-full bg-secondary h-auto p-10 max-md:px-0"
+    >
+      <div
+        class="bg-primary w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
+      >
+        <h2
+          class="font-extrabold text-[24px] hidden pb-2 text-white max-md:block"
+        >
+          Hire me
+        </h2>
+        <div class="flex items-center">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="flex flex-col items-start gap-5"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="9dcb4f62-0e3c-466d-9f0b-ba1661b2771b"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-md"
+            />
+            <div class="flex gap-3">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Your Phone Number"
+                required
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-md resize-none"
+            ></textarea>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <button
+              type="submit"
+              class="px-6 py-2 text-white bg-tertiary rounded-md shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+        <div class="w-[50%] max-md:w-full">
+          <!-- <div>
+            <h2 class="font-extrabold text-[24px] text-white max-md:hidden">
+              Hire me
+            </h2>
+            <hr class="mt-2 mb-4 border-t-2 border-gray-300 max-md:hidden" />
+            <p class="text-gray-200 max-md:mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis et
+              incidunt corrupti a aspernatur qui modi dicta dolore deleniti
+              voluptas porro dignissimos cupiditate ullam necessitatibus
+              repudiandae laborum, harum, tempore accusantium.
+            </p>
+          </div> -->
+          <div class="mt-5">
+            <ul class="flex flex-col gap-9">
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <p class="text-white max-md:text-[14px]">+62822-4838-6580</p>
+              </li>
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <p class="text-white max-md:text-[14px]">
+                  davefarfar21@gmail.com
+                </p>
+              </li>
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <p class="text-white max-md:text-[14px]">
+                  Jl.Melati 3, Condongcatur, Sleman, DI Yogyakarta
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-7">
+        &copy; <span id="year">2024</span> Daveton Piesco Far Far. All Rights
+        Reserved.
+      </p>
+    </footer>
+
+    <script src="../dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
