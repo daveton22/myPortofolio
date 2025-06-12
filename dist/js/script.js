@@ -65,7 +65,7 @@ fetch("../dist/json/mylinks.json")
   .then((data) => {
     data.forEach((link) => {
       let card = `<button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px]  rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px]  rounded-lg flex justify-center items-center active:scale-[0.9]  cursor-pointer"
                 onclick="window.open('${link.url}', '_blank')"
               >
                 <i
@@ -163,9 +163,6 @@ function hoverRight() {
   hover.classList.add("translate-x-full");
 }
 
-// "https://www.facebook.com/syntic.loaded", "_blank";
-// onclick = "window.open('#')";
-// header navbar scroll will change bg color
 document.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   const cvDiv = document.querySelector("#cvButton span");
@@ -286,3 +283,19 @@ readMore.addEventListener("click", () => {
     dot.classList.add("hidden");
   }
 });
+
+// burger menu
+const burgerMenu = document.querySelector("#hamburger-button");
+function toggleBurgerMenu() {
+  if (window.innerWidth < 768) {
+    burgerMenu.classList.remove("hidden");
+  } else {
+    burgerMenu.classList.add("hidden");
+  }
+}
+
+// Initial check
+toggleBurgerMenu();
+
+// Listen for window resize
+window.addEventListener("resize", toggleBurgerMenu);

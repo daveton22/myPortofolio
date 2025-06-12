@@ -24,12 +24,10 @@
     />
   </head>
 
-  <body
-    class="max-w-[1920px] h-[2000px] scroll-smooth flex flex-col bg-secondary"
-  >
+  <body class="scroll-smooth flex flex-col bg-secondary w-full">
     <header
       id="header"
-      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full m-auto items-center justify-between fixed top-0 z-[9999]"
+      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full items-center justify-between fixed top-0 z-[9999]"
     >
       <!-- Navbar -->
       <div
@@ -37,10 +35,7 @@
       >
         <h1 class="text-2xl font-bold text-tertiary">&lt;Dave&gt;</h1>
       </div>
-      <button
-        id="hamburger-button"
-        class="hidden z-[101] mr-9 cursor-pointer max-md:block"
-      >
+      <button id="hamburger-button" class="z-40 mr-2 cursor-pointer">
         <div id="hamburger-open" class="">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -85,7 +80,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="w-full h-auto">
       <!-- Home -->
       <section
         id="home"
@@ -96,17 +91,12 @@
         >
           <div
             class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
-            data-aos="fade-right"
           >
-            <h2
-              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
-            >
+            <h2 class="text-primary font-bold text-4xl font-robotoMono">
               <span class="text-tertiary">Hi,</span> Saya
               <span class="text-tertiary">Dave</span> Seorang
             </h2>
-            <h2
-              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
-            >
+            <h2 class="text-primary font-bold text-4xl font-robotoMono">
               Graphic Designer,<br />
               Front End Web Maker, Editing
             </h2>
@@ -153,7 +143,6 @@
           <div
             class="w-[600px] h-full relative max-md:w-0 max-md:hidden"
             id="profileDekstop"
-            data-eos="fade-left"
           >
             <div
               class="w-[280px] h-[280px] absolute right-[130px] top-[123px] border-solid border-[10px] border-primary bg-primary rounded-lg"
@@ -164,7 +153,7 @@
               <div class="absolute -translate-y-[8.4rem]">
                 <img
                   src="../dist/profilePicture/profilePicture.png"
-                  alt=""
+                  alt="logo"
                   class="rounded-lg object-cover w-full h-full m-0 p-0"
                 />
               </div>
@@ -191,7 +180,6 @@
         >
           <div
             class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
-            data-aos="fade-right"
           >
             <div id="slider" class="w-[550%] h-auto flex">
               <div class="w-[20%]">
@@ -244,7 +232,7 @@
             </div>
           </div>
 
-          <article class="ml-9 max-md:m-0" data-aos="fade-left">
+          <article class="ml-9 max-md:m-0">
             <p
               class="text-secondary opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
             >
@@ -274,7 +262,7 @@
               class="flex mt-4 max-md:flex max-md:justify-center"
             >
               <button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
                 onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
                 ;
               >
@@ -300,7 +288,7 @@
         </h2>
         <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
         <div class="flex w-[70%] max-md:w-full">
-          <div class="w-full max-md:pl-4" data-aos="fade-left">
+          <div class="w-full max-md:pl-4">
             <h2 class="text-primary text-2xl text-center">
               Front End Languages
             </h2>
@@ -325,7 +313,7 @@
             </div>
           </div>
 
-          <div class="w-full max-md:pr-4" data-aos="fade-right">
+          <div class="w-full max-md:pr-4">
             <h2 class="text-primary text-2xl text-center">
               Editing <br class="hidden max-md:block" />
               Tools
@@ -361,7 +349,7 @@
         <h2
           class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-2xl"
         >
-          Web Project
+          Web Design Project
         </h2>
 
         <hr class="w-[50%] border-t-2 border-gray-300 mb-10" />
@@ -372,7 +360,6 @@
         >
           <div
             class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
-            data-aos="fade-up"
           >
             <div class="rounded-lg">
               <img
@@ -427,7 +414,6 @@
           <div
             id="postersProject"
             class="flex w-[41%] p-1 m-auto gap-x-4 scroll-pl-6"
-            data-aos="fade-up"
           >
             <div
               class="rounded-lg min-w-[180px] max-md:min-w-[140px] snap-start snap-x"
@@ -449,7 +435,6 @@
           <div
             id="feedProject"
             class="w-[72%] flex gap-5 max-md:w-[30%] max-md:gap-1 m-auto justify-center"
-            data-aos="fade-up"
           >
             <div class="flex flex-col gap-5 max-md:gap-1">
               <img
@@ -479,7 +464,6 @@
           <div
             id="feedMajalah"
             class="w-[40%] flex-wrap flex gap-5 max-md:w-[30%] max-md:flex max-md:flex-wrap max-md:justify-center max-md:gap-5 m-auto justify-center"
-            data-aos="fade-up"
           >
             <div class="shadow-lg">
               <img

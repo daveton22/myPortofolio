@@ -26,5 +26,12 @@
     "description": "Website UKM IKNA menggunakan HTML, SASS, dan Javascript (dalam progress)",
     "link": "https://ikna-yogyakarta.vercel.app",
     "direction": "right"
+  },
+  {
+    "image": "../dist/myProject/paymin.png",
+    "title": "Project Web desain Final Project Pemrograman Web",
+    "description": "Project Front End untuk Final Project Pemrograman Web",
+    "link": "https://daveton22.github.io/PayMin-FEproject/",
+    "direction": "right"
   }
 ]
