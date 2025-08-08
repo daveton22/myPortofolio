@@ -24,8 +24,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-5xl: 3rem;
-    --text-5xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
@@ -42,7 +40,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-playwrite-hu: "Playwrite HU", cursive;
     --font-google-sans-code: "Google Sans Code", monospace;
     --color-primary: #222831;
     --color-secondary: #eeeeee;
@@ -228,6 +225,24 @@
   .z-\[9999\] {
     z-index: 9999;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -242,6 +257,9 @@
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
   }
   .my-auto {
     margin-block: auto;
@@ -261,8 +279,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-28 {
-    margin-top: calc(var(--spacing) * 28);
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
   }
   .mt-\[2\.8em\] {
     margin-top: 2.8em;
@@ -281,9 +299,6 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
-  }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -321,14 +336,8 @@
   .h-\[25rem\] {
     height: 25rem;
   }
-  .h-\[34em\] {
-    height: 34em;
-  }
   .h-\[40px\] {
     height: 40px;
-  }
-  .h-\[50rem\] {
-    height: 50rem;
   }
   .h-\[200px\] {
     height: 200px;
@@ -338,6 +347,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -488,6 +500,9 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-\[2\.5rem\] {
+    border-radius: 2.5rem;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -585,9 +600,6 @@
   .font-google-sans-code {
     font-family: var(--font-google-sans-code);
   }
-  .font-playwrite-hu {
-    font-family: var(--font-playwrite-hu);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -596,10 +608,6 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -607,6 +615,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-sm\/tight {
+    font-size: var(--text-sm);
+    line-height: var(--leading-tight);
   }
   .text-\[9px\] {
     font-size: 9px;
@@ -617,21 +629,11 @@
   .text-\[14px\] {
     font-size: 14px;
   }
-  .text-\[20pt\] {
-    font-size: 20pt;
-  }
   .text-\[24px\] {
     font-size: 24px;
   }
-  .text-\[30pt\] {
-    font-size: 30pt;
-  }
-  .text-\[45pt\] {
-    font-size: 45pt;
-  }
-  .leading-tight {
-    --tw-leading: var(--leading-tight);
-    line-height: var(--leading-tight);
+  .text-\[36pt\] {
+    font-size: 36pt;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -1240,7 +1242,7 @@ html {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   transform: translateX(13%);
   top: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 2.5rem;
   z-index: 1000;
 }
 .white {
@@ -1372,10 +1374,6 @@ html {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1466,7 +1464,6 @@ html {
       --tw-skew-y: initial;
       --tw-scroll-snap-strictness: proximity;
       --tw-border-style: solid;
-      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;

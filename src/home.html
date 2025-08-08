@@ -67,7 +67,7 @@
           href="../dist/CV/MyCV.pdf"
           download="MyCV.pdf"
           id="cvButton"
-          class="relative font-bold text-primary px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500 max-md:hidden"
+          class="relative font-bold text-primary px-6 py-2 rounded-[2.5rem] mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500 max-md:hidden"
           onmouseover="hoverLeft()"
           onmouseout="hoverRight()"
         >
@@ -84,14 +84,16 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[34em] 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48"
+        class="flex w-full h-screen 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48"
       >
         <div
           class="w-full my-auto text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
-          <h2 class="text-primary font-medium text-[30pt] font-robotoMono">
+          <h2
+            class="text-primary font-medium text-[36pt] font-robotoMono text-sm/tight"
+          >
             <span
-              class="text-tertiary font-google-sans-code font-bold text-[30pt]"
+              class="text-tertiary font-google-sans-code font-bold text-[36pt] text-sm/tight"
               >Hi,<br
             /></span>
             Saya
@@ -100,14 +102,18 @@
             >
             Seorang
           </h2>
-          <h2 class="text-primary font-medium text-[30pt] font-robotoMono">
-            Graphic Designer, Front End Web Maker, Editing
+          <h2
+            class="text-primary font-medium text-[36pt] font-robotoMono text-sm/tight"
+          >
+            Graphic Designer, <br />
+            Front End Web Maker, Editing
           </h2>
 
           <p
             class="text-primary font-light text-sm my-3 font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
           >
             Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan sedang
+            <br />
             fokus dalam mengembangkan skill desain dan editing.
           </p>
 
@@ -120,7 +126,7 @@
 
           <button
             id="contactMe"
-            class="z-0 mt-5 relative font-bold text-lg p-2 border-solid border-2 border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer"
+            class="z-0 relative font-bold text-lg p-2 border-solid border-2 border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer"
           >
             Contact me
           </button>
@@ -129,115 +135,120 @@
 
       <!-- About -->
       <section
-        class="w-full bg-[#24272c] h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center shadow-custom-dark"
+        class="w-full bg-secondary flex flex-col justify-center items-center h-screen max-md:h-[45em] font-quickSand shadow-custom-dark"
         id="about"
       >
-        <h2
-          class="text-secondary font-bold text-4xl mt-28 mb-7 max-md:mb-1 max-md:mt-[3.5em]"
-        >
-          About me
-        </h2>
-
-        <hr class="w-[80%] border-t-2 border-gray-600 mb-10" />
-
         <div
-          class="items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-3 max-md:flex-col"
+          class="w-[80%] bg-[#24272c] mt-16 rounded-[2.5rem] max-md:w-full h-auto flex flex-col items-center justify-center"
         >
-          <div
-            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
+          <h2
+            class="text-secondary font-bold text-4xl my-8 max-md:mb-1 max-md:mt-[3.5em]"
           >
-            <div id="slider" class="w-[550%] h-auto flex">
-              <div class="w-[20%]">
-                <img
-                  src="../dist/picture/foto1.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-[20%]">
-                <img
-                  src="../dist/picture/foto2.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-[20%]">
-                <img
-                  src="../dist/picture/foto3.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-[20%]">
-                <img
-                  src="../dist/picture/foto4.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="w-[20%]">
-                <img
-                  src="../dist/picture/foto5.jpg"
-                  alt=""
-                  class="object-cover w-full h-full"
-                />
-              </div>
-            </div>
-            <div
-              id="prev-image"
-              class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
-            >
-              <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
-            </div>
-            <div
-              id="next-image"
-              class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
-            >
-              <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
-            </div>
-          </div>
+            About me
+          </h2>
 
-          <article class="ml-9 max-md:m-0">
-            <p
-              class="text-secondary opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
-            >
-              Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
-              November 2005 dan berasal dari maluku tenggara dan saat ini
-              menempuh pendidikan sebagai mahasiswa Informatika semester 3 dari
+          <hr class="w-[80%] border-t-2 border-gray-600 mb-10" />
 
-              <span class="readMoreText max-md:hidden">
-                Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
-                pemahaman mengenai front end web. seperti html, css, javascript,
-                bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
-                saya masih tetap mengembangkan skill ini agar mampu menguasai
-                nya. saya juga aktif dalam mengikuti kegiatan seperti kursus
-                online maupun organisasi kampus.
-              </span>
-            </p>
-            <button
-              id="readMorebutton"
-              class="text-tertiary font-black hidden max-md:inline text-[9px]"
-            >
-              Read More
-            </button>
-            <hr />
-            <!-- Social Links -->
+          <div
+            class="items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-3 max-md:flex-col"
+          >
             <div
-              id="linkList"
-              class="flex mt-4 max-md:flex max-md:justify-center"
+              class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-[2.5rem] bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
             >
-              <button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-                onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
-                ;
+              <div id="slider" class="w-[550%] h-auto flex">
+                <div class="w-[20%]">
+                  <img
+                    src="../dist/picture/foto1.jpg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="w-[20%]">
+                  <img
+                    src="../dist/picture/foto2.jpg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="w-[20%]">
+                  <img
+                    src="../dist/picture/foto3.jpg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="w-[20%]">
+                  <img
+                    src="../dist/picture/foto4.jpg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="w-[20%]">
+                  <img
+                    src="../dist/picture/foto5.jpg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+              <div
+                id="prev-image"
+                class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
               >
-                <i
-                  class="fa-brands fa-facebook fa-2x"
-                  style="color: #00adb5"
-                ></i>
-              </button>
+                <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
+              </div>
+              <div
+                id="next-image"
+                class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+              >
+                <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
+              </div>
             </div>
-          </article>
+
+            <article class="ml-9 max-md:m-0">
+              <p
+                class="text-secondary opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
+              >
+                Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
+                November 2005 dan berasal dari maluku tenggara dan saat ini
+                menempuh pendidikan sebagai mahasiswa Informatika semester 3
+                dari
+
+                <span class="readMoreText max-md:hidden">
+                  Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
+                  pemahaman mengenai front end web. seperti html, css,
+                  javascript, bootstrap, dan tailwind walaupun masih tidak
+                  terlalu ahli namun saya masih tetap mengembangkan skill ini
+                  agar mampu menguasai nya. saya juga aktif dalam mengikuti
+                  kegiatan seperti kursus online maupun organisasi kampus.
+                </span>
+              </p>
+              <button
+                id="readMorebutton"
+                class="text-tertiary font-black hidden max-md:inline text-[9px]"
+              >
+                Read More
+              </button>
+              <hr />
+              <!-- Social Links -->
+              <div
+                id="linkList"
+                class="flex mt-4 max-md:flex max-md:justify-center"
+              >
+                <button
+                  class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+                  onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+                  ;
+                >
+                  <i
+                    class="fa-brands fa-facebook fa-2x"
+                    style="color: #00adb5"
+                  ></i>
+                </button>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -324,7 +335,7 @@
           class="grid grid-cols-3 gap-20 max-w-[90%] h-auto max-md:p-5 md:grid max-md:grid-cols-2 justify-items-center mb-8 max-md:gap-y-5"
         >
           <div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
+            class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-lg shadow-lg max-md:h-auto"
           >
             <div class="rounded-lg">
               <img
@@ -515,7 +526,7 @@
       class="flex flex-col justify-center items-center w-full bg-secondary h-auto p-10 max-md:px-0"
     >
       <div
-        class="bg-primary w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
+        class="bg-primary w-[96%] h-auto flex justify-between rounded-[2.5rem] p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
       >
         <h2
           class="font-extrabold text-[24px] hidden pb-2 text-white max-md:block"
@@ -538,7 +549,7 @@
               name="name"
               placeholder="Your Name"
               required
-              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-md"
+              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-[2.5rem]"
             />
             <div class="flex gap-3">
               <input
@@ -546,21 +557,21 @@
                 name="email"
                 placeholder="Your Email"
                 required
-                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-[2.5rem]"
               />
               <input
                 type="text"
                 name="phone"
                 placeholder="Your Phone Number"
                 required
-                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-[2.5rem]"
               />
             </div>
             <textarea
               name="message"
               placeholder="Your Message"
               required
-              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-md resize-none"
+              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-[2.5rem] resize-none"
             ></textarea>
             <input
               type="hidden"
@@ -569,7 +580,7 @@
             />
             <button
               type="submit"
-              class="px-6 py-2 text-white bg-tertiary rounded-md shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              class="px-6 py-2 text-white bg-tertiary rounded-[2.5rem] shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Send
             </button>
