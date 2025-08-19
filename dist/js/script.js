@@ -226,6 +226,13 @@ contactButton.addEventListener("click", () => {
   contactSection.scrollIntoView({ behavior: "smooth" });
 });
 
+const seeMyWork = document.querySelector("#seeMyWork");
+
+seeMyWork.addEventListener("click", () => {
+  const workSection = document.querySelector("#projects");
+  workSection.scrollIntoView({ behavior: "smooth" });
+});
+
 // slider
 
 let index = 0;
@@ -299,3 +306,30 @@ toggleBurgerMenu();
 
 // Listen for window resize
 window.addEventListener("resize", toggleBurgerMenu);
+
+// Light and dark theme
+// const toggle = document.getElementById("theme-toggle");
+// const knob = document.getElementById("toggle-knob");
+// const sun = document.getElementById("sun-icon");
+// const moon = document.getElementById("moon-icon");
+// function setTheme(dark) {
+//   document.documentElement.classList.toggle("dark", dark);
+//   knob.style.transform = dark ? "translateX(24px)" : "translateX(0)";
+//   sun.style.opacity = dark ? "0" : "1";
+//   moon.style.opacity = dark ? "1" : "0";
+//   localStorage.setItem("theme", dark ? "dark" : "light");
+// }
+// toggle.addEventListener("click", () => {
+//   const isDark = !document.documentElement.classList.contains("dark");
+//   setTheme(isDark);
+// });
+// // On load
+// if (
+//   localStorage.getItem("theme") === "dark" ||
+//   (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+//     !localStorage.getItem("theme"))
+// ) {
+//   setTheme(true);
+// } else {
+//   setTheme(false);
+// }

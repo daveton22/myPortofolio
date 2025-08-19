@@ -84,52 +84,161 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-screen 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48"
+        class="w-full h-screen 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48 flex flex-col items-center justify-center"
       >
         <div
-          class="w-full my-auto text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+          class="w-full flex items-center justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
-          <h2
-            class="text-primary font-medium text-[36pt] font-robotoMono text-sm/tight"
+          <!-- Light/Dark Mode Separate Buttons -->
+          <div
+            class="flex flex-col items-center justify-center max-md:mr-0 gap-3 max-md:hidden"
           >
-            <span
-              class="text-tertiary font-google-sans-code font-bold text-[36pt] text-sm/tight"
-              >Hi,<br
-            /></span>
-            Saya
-            <span class="text-tertiary font-google-sans-code font-bold"
-              >&lt;DAVE&gt;</span
+            <button
+              id="light-mode-btn"
+              aria-label="Switch to Light Mode"
+              class="w-10 h-10 rounded-full bg-gray-200 text-yellow-500 flex items-center justify-center shadow-lg hover:bg-yellow-100 transition-colors duration-300 focus:outline-none"
             >
-            Seorang
-          </h2>
-          <h2
-            class="text-primary font-medium text-[36pt] font-robotoMono text-sm/tight"
-          >
-            Graphic Designer, <br />
-            Front End Web Maker, Editing
-          </h2>
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              id="dark-mode-btn"
+              aria-label="Switch to Dark Mode"
+              class="w-10 h-10 rounded-full bg-gray-800 text-blue-400 flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors duration-300 focus:outline-none"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <h1
+              class="transform -rotate-90 text-primary font-bold mt-11 text-shadow-lg"
+            >
+              Change theme -
+            </h1>
+          </div>
+          <div class="flex flex-col items-center">
+            <h2
+              class="text-primary font-medium text-[36pt] font-robotoMono uppercase"
+            >
+              <span
+                class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[30pt] max-md:leading-[40px] text-center"
+                >Hi, I'm Dave<br
+              /></span>
+            </h2>
+            <h2
+              class="text-primary font-extrabold text-shadow-lg text-[46pt] max-md:text-[30pt] font-robotoMono font-stretch-ultra-expanded uppercase leading-[60px] max-md:leading-[50px] text-center"
+            >
+              Graphic Designer, <br />
+              Front End Web Maker, <br />
+              Video Editing
+            </h2>
 
-          <p
-            class="text-primary font-light text-sm my-3 font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
-          >
-            Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan sedang
-            <br />
-            fokus dalam mengembangkan skill desain dan editing.
-          </p>
+            <p
+              class="text-primary font-light text-sm my-3 font-robotoMono max-md:max-w-[350px] max-md:text-[13px] text-shadow-lg"
+            >
+              Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan
+              sedang
+              <br />
+              fokus dalam mengembangkan skill desain dan editing.
+            </p>
 
-          <a
-            href="../dist/CV/CV_Dave.pdf"
-            download="CV_Dave.pdf"
-            class="hidden max-md:block font-bold text-tertiary"
-            >Download CV</a
-          >
+            <a
+              href="../dist/CV/CV_Dave.pdf"
+              download="CV_Dave.pdf"
+              class="hidden max-md:block font-bold text-tertiary"
+              >Download CV</a
+            >
 
-          <button
-            id="contactMe"
-            class="z-0 relative font-bold text-lg p-2 border-solid border-2 border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer"
+            <div class="flex gap-x-3 items-center justify-center">
+              <button
+                id="contactMe"
+                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-primary text-white rounded-lg border-solid border-2 border-primary hover:bg-primary transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer shadow-xl"
+              >
+                Let's Connect
+              </button>
+              <button
+                id="seeMyWork"
+                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-secondary text-primary rounded-lg border-solid border-2 transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer shadow-xl"
+              >
+                See my Work
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center mt-4 max-md:hidden"
           >
-            Contact me
-          </button>
+            <button
+              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+              onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+              ;
+            >
+              <i
+                class="fa-brands fa-facebook shadow-lg fa-xl"
+                style="color: #00adb5"
+              ></i>
+            </button>
+            <button
+              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+              onclick="window.open('https://www.instagram.com/dave_farfar/', '_blank')"
+            >
+              <i
+                class="fa-brands fa-instagram shadow-lg fa-xl"
+                style="color: #00adb5"
+              ></i>
+            </button>
+            <button
+              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+              onclick="window.open('https://www.linkedin.com/in/dave-farfar/', '_blank')"
+            >
+              <i
+                class="fa-brands fa-linkedin shadow-lg fa-xl"
+                style="color: #00adb5"
+              ></i>
+            </button>
+            <button
+              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+              onclick="window.open('https://github.com/daveton22', '_blank')"
+            >
+              <i
+                class="fa-brands fa-github shadow-lg fa-xl"
+                style="color: #00adb5"
+              ></i>
+            </button>
+            <h1
+              class="transform -rotate-90 text-primary text-shadow-lg font-bold mt-8"
+            >
+              Follow me -
+            </h1>
+          </div>
+          <!-- <div class="flex justify-center top-24 relative animate-bounce">
+            <span
+              class="absolute left-1/2 top-[2.5em] -translate-x-1/2 -translate-y-1/2 z-0"
+            >
+              <span
+                class="block w-10 h-10 rounded-full bg-tertiary opacity-70"
+              ></span>
+            </span>
+            <svg
+              width="28"
+              height="56"
+              viewBox="0 0 28 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="relative z-10"
+            >
+              <line
+                x1="14"
+                y1="0"
+                x2="14"
+                y2="45"
+                stroke="#222831"
+                stroke-width="3"
+              />
+              <polyline
+                points="7,38 14,52 21,38"
+                fill="none"
+                stroke="#222831"
+                stroke-width="3"
+              />
+            </svg>
+          </div> -->
         </div>
       </section>
 
@@ -139,116 +248,109 @@
         id="about"
       >
         <div
-          class="w-[80%] bg-[#24272c] mt-16 rounded-[2.5rem] max-md:w-full h-auto flex flex-col items-center justify-center"
+          class="w-[80%] bg-[#24272c] p-12 rounded-[2.5rem] max-md:w-full h-auto flex items-center justify-center max-md:flex-col max-md:p-5 max-md:rounded-none"
         >
-          <h2
-            class="text-secondary font-bold text-4xl my-8 max-md:mb-1 max-md:mt-[3.5em]"
-          >
-            About me
-          </h2>
-
-          <hr class="w-[80%] border-t-2 border-gray-600 mb-10" />
-
           <div
-            class="items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-3 max-md:flex-col"
+            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-[2.5rem] bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative max-md:rounded-none"
           >
-            <div
-              class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-[2.5rem] bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
-            >
-              <div id="slider" class="w-[550%] h-auto flex">
-                <div class="w-[20%]">
-                  <img
-                    src="../dist/picture/foto1.jpg"
-                    alt=""
-                    class="object-cover w-full h-full"
-                  />
-                </div>
-                <div class="w-[20%]">
-                  <img
-                    src="../dist/picture/foto2.jpg"
-                    alt=""
-                    class="object-cover w-full h-full"
-                  />
-                </div>
-                <div class="w-[20%]">
-                  <img
-                    src="../dist/picture/foto3.jpg"
-                    alt=""
-                    class="object-cover w-full h-full"
-                  />
-                </div>
-                <div class="w-[20%]">
-                  <img
-                    src="../dist/picture/foto4.jpg"
-                    alt=""
-                    class="object-cover w-full h-full"
-                  />
-                </div>
-                <div class="w-[20%]">
-                  <img
-                    src="../dist/picture/foto5.jpg"
-                    alt=""
-                    class="object-cover w-full h-full"
-                  />
-                </div>
+            <div id="slider" class="w-[550%] h-auto flex">
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
               </div>
-              <div
-                id="prev-image"
-                class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
-              >
-                <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto2.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
               </div>
-              <div
-                id="next-image"
-                class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
-              >
-                <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto3.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto4.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="../dist/picture/foto5.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
               </div>
             </div>
-
-            <article class="ml-9 max-md:m-0">
-              <p
-                class="text-secondary opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
-              >
-                Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
-                November 2005 dan berasal dari maluku tenggara dan saat ini
-                menempuh pendidikan sebagai mahasiswa Informatika semester 3
-                dari
-
-                <span class="readMoreText max-md:hidden">
-                  Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
-                  pemahaman mengenai front end web. seperti html, css,
-                  javascript, bootstrap, dan tailwind walaupun masih tidak
-                  terlalu ahli namun saya masih tetap mengembangkan skill ini
-                  agar mampu menguasai nya. saya juga aktif dalam mengikuti
-                  kegiatan seperti kursus online maupun organisasi kampus.
-                </span>
-              </p>
-              <button
-                id="readMorebutton"
-                class="text-tertiary font-black hidden max-md:inline text-[9px]"
-              >
-                Read More
-              </button>
-              <hr />
-              <!-- Social Links -->
-              <div
-                id="linkList"
-                class="flex mt-4 max-md:flex max-md:justify-center"
-              >
-                <button
-                  class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-                  onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
-                  ;
-                >
-                  <i
-                    class="fa-brands fa-facebook fa-2x"
-                    style="color: #00adb5"
-                  ></i>
-                </button>
-              </div>
-            </article>
+            <div
+              id="prev-image"
+              class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
+            </div>
+            <div
+              id="next-image"
+              class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
+            </div>
           </div>
+
+          <article class="ml-9 max-md:m-0">
+            <h2 class="text-white tracking-wide font-bold text-4xl mb-4">
+              ABOUT ME
+            </h2>
+
+            <h4 class="text-tertiary font-bold text-[14pt] mb-2">
+              Graphic Designer, Front End Web Maker, Editing
+            </h4>
+            <p
+              class="text-secondary text-[12pt] opacity-85 font-normal w-[500px] mb-1 max-md:text-[11px] max-md:w-[300px]"
+            >
+              Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
+              November 2005 dan berasal dari maluku tenggara dan saat ini
+              menempuh pendidikan sebagai mahasiswa Informatika semester 3 dari
+
+              <!-- <span class="readMoreText max-md:hidden"> -->
+              Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
+              pemahaman mengenai front end web. seperti html, css, javascript,
+              bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
+              saya masih tetap mengembangkan skill ini agar mampu menguasai nya.
+              saya juga aktif dalam mengikuti kegiatan seperti kursus online
+              maupun organisasi kampus.
+              <!-- </span> -->
+            </p>
+            <button
+              id="readMorebutton"
+              class="text-tertiary font-black hidden max-md:inline text-[9px]"
+            >
+              Read More
+            </button>
+            <!-- Social Links -->
+            <div
+              id="linkList"
+              class="flex mt-4 max-md:flex max-md:justify-center"
+            >
+              <button
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
+                onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+                ;
+              >
+                <i
+                  class="fa-brands fa-facebook fa-2x"
+                  style="color: #00adb5"
+                ></i>
+              </button>
+            </div>
+          </article>
         </div>
       </section>
 
