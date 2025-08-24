@@ -111,23 +111,18 @@ fetch("../dist/json/tools.json")
   });
 
 // posters
-fetch("../dist/json/posters.json")
+fetch("../dist/json/graphicDesignProject.json")
   .then((response) => response.json())
   .then((data) => {
-    data.forEach((poster) => {
-      let posterCard = `
-            <div class="rounded-lg min-w-[180px] max-md:min-w-[140px] snap-start">
-
-              <img
-                src="${poster.image}"
-                alt="poster"
-                class="w-64 rounded-lg text-white object-cover"
-              />
-            </div>
-          </div>
+    data.forEach((graphicDesign) => {
+      let graphicDesignCard = `
+        <img
+          src="${graphicDesign.image}"
+          alt="poster"
+          class="rounded-lg object-cover w-full h-64 max-md:h-36 cursor-pointer transition-transform duration-200 hover:scale-105"
+        />
       `;
-
-      document.getElementById("postersProject").innerHTML += posterCard;
+      document.getElementById("gridContainer").innerHTML += graphicDesignCard;
     });
   });
 
