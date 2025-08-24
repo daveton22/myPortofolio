@@ -333,3 +333,20 @@ window.addEventListener("resize", toggleBurgerMenu);
 // } else {
 //   setTheme(false);
 // }
+
+const lightModeBtn = document.getElementById("light-mode-btn");
+if (lightModeBtn) {
+  lightModeBtn.addEventListener("click", () => {
+    alert(
+      "Warning: This feature is still in development and may not work as expected."
+    );
+  });
+}
+const darkModeBtn = document.getElementById("dark-mode-btn");
+if (darkModeBtn) {
+  darkModeBtn.addEventListener("click", () => {
+    alert(
+      "Warning: This feature is still in development and may not work as expected."
+    );
+  });
+}
