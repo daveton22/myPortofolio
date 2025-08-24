@@ -119,10 +119,40 @@ fetch("../dist/json/graphicDesignProject.json")
         <img
           src="${graphicDesign.image}"
           alt="poster"
-          class="rounded-lg object-cover w-full h-64 max-md:h-36 cursor-pointer transition-transform duration-200 hover:scale-105"
+          class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform duration-200 hover:scale-105"
         />
       `;
       document.getElementById("gridContainer").innerHTML += graphicDesignCard;
+    });
+
+    // Setelah gambar ditambahkan → pasang event listener
+    const images = document.querySelectorAll("#imageGallery img");
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const closeModal = document.getElementById("closeModal");
+
+    images.forEach((img) => {
+      img.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modalImage.src = img.src;
+
+        const header = document.getElementById("header");
+        header.classList.add("hidden");
+      });
+    });
+
+    // Tutup modal
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      const header = document.getElementById("header");
+      header.classList.remove("hidden");
+    });
+
+    // Klik di luar gambar juga menutup modal
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
     });
   });
 

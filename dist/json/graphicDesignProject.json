@@ -1,24 +1,15 @@
 [
   {
+    "image": "../dist/posters/ferrari.jpg"
+  },
+  {
+    "image": "../dist/posters/poster,banner,feedPaskah2025-01.jpg"
+  },
+  {
     "image": "../dist/posters/posterMakrab.jpg"
   },
   {
-    "image": "../dist/posters/PosterIknaPancasila-02.jpg"
-  },
-  {
-    "image": "../dist/posters/posterPo2.jpg"
-  },
-  {
     "image": "../dist/posters/Posterpaskah.jpg"
-  },
-  {
-    "image": "../dist/posters/posterRohani1-02.png"
-  },
-  {
-    "image": "../dist/posters/posterSumpahPemuda-01.jpg"
-  },
-  {
-    "image": "../dist/posters/posterPo1.jpg"
   },
   {
     "image": "../dist/posters/posterOpenRecNatal-01.jpg"
@@ -55,5 +46,17 @@
   },
   {
     "image": "../dist/majalah/majalah(9).jpg"
+  },
+  {
+    "image": "../dist/feed/feedMakrab-03.jpg"
+  },
+  {
+    "image": "../dist/feed/feedPaskah.jpg"
+  },
+  {
+    "image": "../dist/feed/posterTahunbaru-02.jpg"
+  },
+  {
+    "image": "../dist/feed/TemplateIGFeedIKNA-19.jpg"
   }
 ]

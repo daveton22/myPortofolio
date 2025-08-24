@@ -500,6 +500,29 @@
             </a>
           </p>
         </div>
+
+        <!-- Modal -->
+        <div
+          id="imageModal"
+          class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50"
+        >
+          <div
+            class="relative max-w-4xl max-h-[90vh] w-auto h-auto p-4 animate-jump animate-once"
+          >
+            <button
+              id="closeModal"
+              class="absolute top-2 right-2 bg-white/80 hover:bg-white text-black rounded-full px-3 py-1 cursor-pointer"
+            >
+              ✕
+            </button>
+            <img
+              id="modalImage"
+              src=""
+              alt="preview"
+              class="w-full h-auto max-h-[85vh] object-contain rounded-xl shadow-xl"
+            />
+          </div>
+        </div>
       </section>
     </main>
 
