@@ -49,7 +49,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --animate-jump: jump var(--default-animation-duration, 0.5s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
-    --animate-fade: fade var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
     --font-google-sans-code: "Google Sans Code", monospace;
     --color-primary: #222831;
     --color-secondary: #eeeeee;
@@ -1640,14 +1639,6 @@ html {
   }
   50% {
     transform: scale(1.2);
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @layer properties {
