@@ -1,5 +1,8 @@
 [
   {
+    "image": "../dist/posters/UIMovieWeb.png"
+  },
+  {
     "image": "../dist/posters/ferrari.jpg"
   },
   {
@@ -58,8 +61,5 @@
   },
   {
     "image": "../dist/feed/TemplateIGFeedIKNA-19.jpg"
-  },
-  {
-    "image": "../dist/posters/UIMovieWeb.png"
   }
 ]
