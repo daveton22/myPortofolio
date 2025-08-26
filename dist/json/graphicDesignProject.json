@@ -24,6 +24,18 @@
     "image": "../dist/posters/israMiraj-02.jpg"
   },
   {
+    "image": "../dist/feed/feedMakrab-03.jpg"
+  },
+  {
+    "image": "../dist/feed/feedPaskah.jpg"
+  },
+  {
+    "image": "../dist/posters/feedIG.jpg"
+  },
+  {
+    "image": "../dist/posters/feedIG2.jpg"
+  },
+  {
     "image": "../dist/majalah/majalah(1).jpg"
   },
   {
@@ -49,17 +61,5 @@
   },
   {
     "image": "../dist/majalah/majalah(9).jpg"
-  },
-  {
-    "image": "../dist/feed/feedMakrab-03.jpg"
-  },
-  {
-    "image": "../dist/feed/feedPaskah.jpg"
-  },
-  {
-    "image": "../dist/feed/posterTahunbaru-02.jpg"
-  },
-  {
-    "image": "../dist/feed/TemplateIGFeedIKNA-19.jpg"
   }
 ]

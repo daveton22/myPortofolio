@@ -119,7 +119,7 @@ fetch("../dist/json/graphicDesignProject.json")
         <img
           src="${graphicDesign.image}"
           alt="poster"
-          class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform duration-200 hover:scale-105"
+          class="w-full h-64 object-cover rounded-lg cursor-pointer transition-transform duration-200 hover:scale-105 shadow-2xl"
         />
       `;
       document.getElementById("gridContainer").innerHTML += graphicDesignCard;
