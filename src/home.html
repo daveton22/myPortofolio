@@ -253,7 +253,7 @@
           <div
             class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[300px] z-[-1] pointer-events-none opacity-70 rounded-[50%_40%_60%_50%/60%_50%_40%_50%]"
             style="
-              filter: blur(60px);
+              filter: blur(80px);
               background: radial-gradient(
                 circle at 50% 70%,
                 #00adb5 0%,
@@ -276,44 +276,53 @@
           <div
             class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-[2.5rem] bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative max-md:rounded-none"
           >
-            <div id="slider" class="w-[550%] h-auto flex">
-              <div class="w-[20%]">
+            <swiper-container
+              class="mySwiper h-full flex justify-center items-center"
+              pagination="true"
+              pagination-clickable="true"
+              navigation="true"
+              space-between="30"
+              centered-slides="true"
+              autoplay-delay="2500"
+              autoplay-disable-on-interaction="false"
+            >
+              <swiper-slide>
                 <img
                   src="../dist/picture/foto1.jpg"
                   alt=""
                   class="object-cover w-full h-full"
                 />
-              </div>
-              <div class="w-[20%]">
+              </swiper-slide>
+              <swiper-slide>
                 <img
                   src="../dist/picture/foto2.jpg"
                   alt=""
                   class="object-cover w-full h-full"
                 />
-              </div>
-              <div class="w-[20%]">
+              </swiper-slide>
+              <swiper-slide>
                 <img
                   src="../dist/picture/foto3.jpg"
                   alt=""
                   class="object-cover w-full h-full"
                 />
-              </div>
-              <div class="w-[20%]">
+              </swiper-slide>
+              <swiper-slide>
                 <img
                   src="../dist/picture/foto4.jpg"
                   alt=""
                   class="object-cover w-full h-full"
                 />
-              </div>
-              <div class="w-[20%]">
+              </swiper-slide>
+              <swiper-slide>
                 <img
                   src="../dist/picture/foto5.jpg"
                   alt=""
                   class="object-cover w-full h-full"
                 />
-              </div>
-            </div>
-            <div
+              </swiper-slide>
+            </swiper-container>
+            <!-- <div
               id="prev-image"
               class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
             >
@@ -324,7 +333,7 @@
               class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
             >
               <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
-            </div>
+            </div> -->
           </div>
 
           <article class="ml-9 max-md:m-0">
@@ -487,7 +496,7 @@
           >
             <button
               id="closeModal"
-              class="absolute top-2 right-2 bg-white/80 hover:bg-white text-black rounded-full px-3 py-1 cursor-pointer"
+              class="absolute top-2 right-2 bg-tertiary hover:bg-[#00cbd6] font-semibold text-white rounded-full px-3 py-2 cursor-pointer"
             >
               ✕
             </button>
@@ -672,6 +681,7 @@
 
     <script src="../dist/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
       AOS.init();
     </script>

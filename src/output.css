@@ -713,6 +713,9 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -841,6 +844,9 @@
   .opacity-20 {
     opacity: 20%;
   }
+  .opacity-40 {
+    opacity: 40%;
+  }
   .opacity-70 {
     opacity: 70%;
   }
@@ -937,6 +943,13 @@
     &:hover {
       @media (hover: hover) {
         scale: 1.2;
+      }
+    }
+  }
+  .hover\:bg-\[\#00cbd6\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #00cbd6;
       }
     }
   }
