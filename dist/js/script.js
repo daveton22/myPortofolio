@@ -227,6 +227,17 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// function updateHamburgerVisibility() {
+//   if (window.innerWidth < 768) {
+//     document.getElementById("hamburger-button").classList.add("hidden");
+//   } else {
+//     document.getElementById("hamburger-button").classList.remove("hidden");
+//   }
+// }
+
+// window.addEventListener("resize", updateHamburgerVisibility);
+// window.addEventListener("DOMContentLoaded", updateHamburgerVisibility);
+
 // Scroll animation for skill cards
 // window.addEventListener("scroll", () => {
 //   const skillCards = document.querySelectorAll(".skillCard");
