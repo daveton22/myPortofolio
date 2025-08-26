@@ -2,14 +2,14 @@
   {
     "image": "../dist/myProject/webtodolist.png",
     "title": "Project Todo List MySkill",
-    "description": "Website todo list sederhana dengan menggunakan HTML, CSS, dan Javascript",
+    "description": "Desain Website todo list sederhana dengan menggunakan HTML, CSS, dan Javascript",
     "link": "https://daveton22.github.io/ProjectToDoList/",
     "direction": "right"
   },
   {
     "image": "../dist/myProject/revoUID.png",
     "title": "Project RevoU",
-    "description": "Website Konversi suhu Celcius to Fahrenheit menggunakan HTML, CSS, dan Javascript",
+    "description": "Desain Website Konversi suhu Celcius to Fahrenheit menggunakan HTML, CSS, dan Javascript",
     "link": "https://daveton22.github.io/web-konversi-suhu/",
     "direction": "right"
   },
@@ -17,20 +17,20 @@
     "image": "../dist/myProject/webBookShelf.png",
     "title": "Project Book Shelf",
     "description": "Website bookshelf sederhana dengan menggunakan DOM dan Local Storage",
-    "link": "https://wisatayogyakarta.vercel.app",
+    "link": "",
     "direction": "right"
   },
   {
     "image": "../dist/myProject/ikna.png",
     "title": "Project Web desain UKM IKNA",
-    "description": "Website UKM IKNA menggunakan HTML, SASS, dan Javascript (dalam progress)",
+    "description": "Desain web organisasi mahasiswa menggunakan HTML, CSS, Javascript, dan SASS",
     "link": "https://ikna-yogyakarta.vercel.app",
     "direction": "right"
   },
   {
     "image": "../dist/myProject/paymin.png",
     "title": "Project Web desain Final Project Pemrograman Web",
-    "description": "Project Front End untuk Final Project Pemrograman Web",
+    "description": "Project Front End dashboard sistem pos untuk Final Project Kuliah",
     "link": "https://daveton22.github.io/PayMin-FEproject/",
     "direction": "right"
   }
