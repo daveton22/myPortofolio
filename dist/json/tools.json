@@ -1,9 +1,5 @@
 [
   {
-    "name": "GitHub",
-    "icons": "../dist/icon-tools/github.png"
-  },
-  {
     "name": "VSCode",
     "icons": "../dist/icon-tools/vscode.png"
   },
