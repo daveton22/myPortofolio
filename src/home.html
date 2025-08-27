@@ -84,10 +84,10 @@
       <!-- Home -->
       <section
         id="home"
-        class="relative w-full h-screen 2xl:h-[55em] max-md:h-[42em] overflow-hidden max-md:px-4 max-md:py-48 flex flex-col items-center justify-center"
+        class="relative w-full h-screen 2xl:h-[55em] max-md:h-[42em] max-md:px-4 max-md:py-48 flex flex-col items-center justify-center overflow-hidden"
       >
         <div
-          class="w-full flex items-center justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+          class="w-full flex items-center overflow-hidden justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
           <!-- Light/Dark Mode Separate Buttons -->
           <div
@@ -119,7 +119,7 @@
             >
               <span
                 class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[30pt] max-md:leading-[40px] text-center"
-                >Hi, I'm Dave<br
+                >Halo, Saya Dave<br
               /></span>
             </h2>
             <h2
@@ -251,14 +251,26 @@
 
           <!-- Gradient Mesh Background Blur Shape -->
           <div
-            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] z-[-1] pointer-events-none opacity-70 rounded-[50%_40%_60%_50%/60%_50%_40%_50%]"
+            class="absolute right-[-45%] top-[5%] transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] z-[-1] pointer-events-none opacity-70 rounded-[50%_40%_60%_50%/60%_50%_40%_50%]"
             style="
               filter: blur(80px);
               background: radial-gradient(
-                circle at 50% 70%,
+                circle at 20% 70%,
                 #00adb5 0%,
                 #00adb5 70%,
-                transparent 60%
+                transparent 40%
+              );
+            "
+          ></div>
+          <div
+            class="absolute left-[-5%] top-[90%] transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] z-[-1] pointer-events-none opacity-70 rounded-[50%_40%_60%_50%/60%_50%_40%_50%]"
+            style="
+              filter: blur(80px);
+              background: radial-gradient(
+                circle at 60% 70%,
+                #00adb5 0%,
+                #00adb5 70%,
+                transparent 40%
               );
             "
           ></div>
@@ -267,7 +279,7 @@
 
       <!-- About -->
       <section
-        class="w-full bg-secondary flex flex-col justify-center items-center h-screen max-md:h-[45em] font-quickSand shadow-custom-dark"
+        class="w-full flex flex-col justify-center items-center h-screen max-md:h-[45em] font-quickSand shadow-custom-dark"
         id="about"
       >
         <div
