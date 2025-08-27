@@ -386,3 +386,34 @@ if (darkModeBtn) {
     );
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Cek apakah user sedang menggunakan layar kecil (mobile)
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile && !localStorage.getItem("mobileWarningShown")) {
+    // Buat elemen popup
+    const popup = document.createElement("div");
+    popup.className =
+      "fixed inset-0 bg-black/60 flex items-center justify-center z-50";
+    popup.innerHTML = `
+          <div class="bg-white rounded-2xl shadow-xl p-6 max-w-sm w-[90%] text-center">
+            <h2 class="text-xl font-bold text-red-600 mb-2">⚠️ Peringatan!</h2>
+            <p class="text-gray-700 mb-4">
+              Website ini <span class="font-semibold">belum sepenuhnya responsif</span> untuk versi mobile dan sedang dalam perbaikan.<br><br>
+              Disarankan untuk membuka website di mode <span class="font-bold">desktop</span>.
+            </p>
+            <button id="closeMobileWarning" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+              Saya Mengerti
+            </button>
+          </div>
+        `;
+    document.body.appendChild(popup);
+
+    // Tombol tutup
+    document.getElementById("closeMobileWarning").onclick = function () {
+      popup.remove();
+      localStorage.setItem("mobileWarningShown", "true");
+    };
+  }
+});
