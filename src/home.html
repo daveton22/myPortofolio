@@ -84,10 +84,10 @@
       <!-- Home -->
       <section
         id="home"
-        class="relative w-full h-screen max-md:px-4 max-md:py-48 flex flex-col items-center justify-center overflow-hidden"
+        class="relative w-full h-screen max-md:h-screen max-md:px-4 max-md:py-48 flex flex-col items-center justify-center overflow-hidden"
       >
         <div
-          class="w-full flex items-center overflow-hidden justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+          class="w-full flex items-center justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
           <!-- Light/Dark Mode Separate Buttons -->
           <div
@@ -113,49 +113,47 @@
               Change theme -
             </h1>
           </div>
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center p-6 max-md:w-full max-md:px-2">
             <h2
-              class="text-primary font-medium text-[36pt] font-robotoMono uppercase"
+              class="text-primary text-[44pt] font-robotoMono uppercase max-md:text-[30pt] leading-14 max-md:leading-[48px] max-md:text-left font-black"
             >
               <span
-                class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[30pt] max-md:leading-[40px] text-center"
+                class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[22pt] max-md:leading-[30px] max-md:text-center"
                 >Halo, Saya Dave<br
               /></span>
-            </h2>
-            <h2
-              class="text-primary font-extrabold text-shadow-lg text-[46pt] max-md:text-[30pt] font-robotoMono font-stretch-ultra-expanded uppercase leading-[60px] max-md:leading-[50px] text-center"
-            >
-              Graphic Designer, <br />
-              Front End Web Designer, <br />
+              Graphic Designer, <br class="max-md:hidden" />
+              Front End Web Designer, <br class="max-md:hidden" />
               Video Editing
             </h2>
 
             <p
-              class="text-primary font-light text-[20px] my-3 font-robotoMono max-md:max-w-[350px] max-md:text-[13px] text-shadow-lg"
+              class="text-primary font-light text-[20px] my-3 font-robotoMono max-md:max-w-[95vw] max-md:text-[12px] max-md:leading-[18px] text-shadow-lg max-md:text-left"
             >
               Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan
               sedang
-              <br />
+              <br class="max-md:hidden" />
               fokus dalam mengembangkan skill desain dan editing.
             </p>
 
             <a
               href="../dist/CV/CV_Dave.pdf"
               download="CV_Dave.pdf"
-              class="hidden max-md:block font-bold text-tertiary"
+              class="hidden max-md:block font-bold text-tertiary max-md:mb-2"
               >Download CV</a
             >
 
-            <div class="flex gap-x-3 items-center justify-center">
+            <div
+              class="flex gap-x-3 items-center justify-center max-md:flex-col max-md:gap-y-2 max-md:w-full"
+            >
               <button
                 id="contactMe"
-                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-primary text-white rounded-lg border-solid border-2 border-primary hover:bg-primary transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer shadow-xl"
+                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-primary text-white rounded-lg border-solid border-2 border-primary transition-all duration-300 ease-in-out max-md:mb-2 max-md:mt-0 cursor-pointer shadow-xl w-auto max-md:w-full hover:scale-110 active:scale-95"
               >
                 Let's Connect
               </button>
               <button
                 id="seeMyWork"
-                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-secondary text-primary rounded-lg border-solid border-2 transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2 cursor-pointer shadow-xl"
+                class="z-0 relative font-medium text-[12pt] px-2 py-1 bg-secondary text-primary rounded-lg border-solid border-2 transition-all duration-300 ease-in-out max-md:mb-2 max-md:mt-0 cursor-pointer shadow-xl w-auto max-md:w-full hover:scale-110 active:scale-95"
               >
                 See my Work
               </button>
@@ -279,7 +277,7 @@
 
       <!-- About -->
       <section
-        class="w-full flex flex-col justify-center items-center h-screen max-md:h-[45em] font-quickSand shadow-custom-dark"
+        class="w-full flex flex-col justify-center items-center h-screen max-md:h-full font-quickSand shadow-custom-dark"
         id="about"
       >
         <div
@@ -353,11 +351,11 @@
           >
             <h2 class="text-white font-bold text-4xl">ABOUT ME</h2>
 
-            <h4 class="text-tertiary font-bold text-[14pt] mb-2">
+            <h4 class="text-tertiary font-bold text-[14pt] mb-2 max-md:px-10">
               Graphic Designer, Front End Web Maker, Editing
             </h4>
             <p
-              class="text-secondary text-[12pt] opacity-85 font-normal w-[500px] mb-1 max-md:text-[13px] max-md:w-[400px] max-md:align-middle max-md:text-center"
+              class="text-secondary text-[12pt] opacity-85 font-normal w-[500px] mb-1 max-md:text-[13px] max-md:w-[400px] max-md:align-middle max-md:text-left max-md:px-10"
             >
               Halo, nama saya Daveton Piesco Far-Far, Saya berasal dari Maluku
               Tenggara. Saat ini saya menempuh pendidikan sebagai mahasiswa
@@ -403,7 +401,7 @@
         class="w-full flex flex-col items-center gap-x-12 bg-secondary font-quickSand"
       >
         <h2
-          class="text-primary font-bold text-4xl mb-4 mt-[2.9em] max-md:mt-[3.5em]"
+          class="text-primary font-bold text-4xl mb-4 mt-[2.9em] max-md:mt-[1em]"
         >
           Skills
         </h2>
@@ -453,16 +451,16 @@
         class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
       >
         <h2
-          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-4xl"
+          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[1em] mb-[0.5em] max-md:text-4xl"
         >
           Design Project
         </h2>
 
-        <hr class="w-[50%] border-t-2 border-gray-300 mb-4" />
+        <hr class="w-[50%] border-t-2 border-gray-300 mb-4 max-md:mb-1" />
 
         <div
           id="graphicDesignProject"
-          class="flex flex-col items-center justify-center p-10"
+          class="flex flex-col items-center justify-center p-10 max-md:p-4 gap-y-10 max-md:gap-y-0"
         >
           <!-- Poster project -->
 
@@ -470,6 +468,12 @@
             src="../dist/posters/portofolio.png"
             alt="portofolio"
             class="max-md:m-10 w-[800px] rounded-xl shadow-xl"
+          />
+
+          <img
+            src="../dist/posters/Moodboard.png"
+            alt="Moodboard"
+            class="max-md:m-10 w-[800px] h-auto rounded-xl shadow-xl"
           />
 
           <div
@@ -532,7 +536,7 @@
           class="grid grid-cols-2 grid-rows-2 gap-4 w-full h-[38rem] max-md:grid-cols-1 max-md:grid-rows-none max-md:h-auto justify-items-center mb-8 max-md:mb-0 max-md:gap-y-5 px-36 max-md:p-10 max-md:pb-4"
         >
           <div
-            class="w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:p-8"
+            class="w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:p-6"
           >
             <div class="rounded-lg overflow-hidden">
               <iframe
@@ -556,7 +560,7 @@
             </div>
           </div>
           <div
-            class="col-start-1 row-start-2 w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:p-8"
+            class="col-start-1 row-start-2 w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:p-6"
           >
             <div class="rounded-lg overflow-hidden">
               <iframe
@@ -581,7 +585,7 @@
           </div>
 
           <div
-            class="row-span-2 col-start-2 row-start-1 w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:row-span-1 max-md:col-start-1 max-md:row-start-auto max-md:p-8"
+            class="row-span-2 col-start-2 row-start-1 w-full max-md:w-full h-auto p-4 bg-primary rounded-lg shadow-lg max-md:row-span-1 max-md:col-start-1 max-md:row-start-auto max-md:p-6"
           >
             <div
               class="overflow-hidden flex w-full gap-x-3 justify-center max-md:flex-row max-md:items-center max-md:gap-y-2"
@@ -589,12 +593,12 @@
               <img
                 src="../dist/picture/reels.png"
                 alt="foto"
-                class="w-56 max-md:w-40"
+                class="w-56 max-md:w-24"
               />
               <img
                 src="../dist/picture/tiktok.png"
                 alt="foto"
-                class="w-56 max-md:w-40"
+                class="w-56 max-md:w-24"
               />
             </div>
             <div class="mt-2">
@@ -642,7 +646,7 @@
           class="grid grid-cols-3 gap-10 max-w-[90%] h-auto md:grid max-md:grid-cols-2 justify-items-center mb-8 max-md:gap-y-5 mx-16 max-md:p-4 max-md:mx-0"
         >
           <div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-lg shadow-lg max-md:h-auto"
+            class="w-[24em] max-md:w-[10em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-lg shadow-lg max-md:h-auto"
           >
             <div class="rounded-lg">
               <img
@@ -676,7 +680,7 @@
       class="flex flex-col justify-center items-center w-full bg-secondary h-auto p-10 max-md:px-0"
     >
       <div
-        class="bg-primary w-[96%] h-auto flex justify-between rounded-[2.5rem] p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
+        class="bg-primary w-[96%] h-auto flex justify-between rounded-lg p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
       >
         <h2
           class="font-extrabold text-[24px] hidden pb-2 text-white max-md:block"
@@ -699,7 +703,7 @@
               name="name"
               placeholder="Your Name"
               required
-              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-[2.5rem]"
+              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-lg"
             />
             <div class="flex gap-3">
               <input
@@ -707,21 +711,21 @@
                 name="email"
                 placeholder="Your Email"
                 required
-                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-[2.5rem]"
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-lg"
               />
               <input
                 type="text"
                 name="phone"
                 placeholder="Your Phone Number"
                 required
-                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-[2.5rem]"
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-lg"
               />
             </div>
             <textarea
               name="message"
               placeholder="Your Message"
               required
-              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-[2.5rem] resize-none"
+              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-lg resize-none"
             ></textarea>
             <input
               type="hidden"
@@ -730,7 +734,7 @@
             />
             <button
               type="submit"
-              class="px-6 py-2 text-white bg-tertiary rounded-[2.5rem] shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              class="px-6 py-2 text-white bg-tertiary rounded-lg shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Send
             </button>
@@ -753,7 +757,7 @@
             <ul class="flex flex-col gap-9">
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 max-md:bg-none flex items-center justify-center"
                 >
                   <i class="fa-solid fa-phone"></i>
                 </div>
@@ -762,7 +766,7 @@
               </li>
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center max-md:bg-none"
                 >
                   <i class="fa-solid fa-envelope"></i>
                 </div>
@@ -773,7 +777,7 @@
               </li>
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center max-md:bg-none"
                 >
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
@@ -787,7 +791,7 @@
         </div>
       </div>
 
-      <p class="mt-7">
+      <p class="mt-7 max-md:text-[12px]">
         &copy; <span id="year">2024</span> Daveton Piesco Far Far. All Rights
         Reserved.
       </p>

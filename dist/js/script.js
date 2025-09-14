@@ -4,7 +4,7 @@ fetch("/dist/json/frontEndProject.json")
   .then((data) => {
     data.forEach((project) => {
       let card = `<div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 
+            class="w-[24em] max-md:w-[10em] h-auto p-4 
             max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
             data-aos="fade-up"
           >
