@@ -26,5 +26,9 @@
   {
     "name": "Premiere",
     "icons": "../dist/icon-tools/premiere-pro.png"
+  },
+  {
+    "name": "After Effects",
+    "icons": "../dist/icon-tools/after-effects.png"
   }
 ]
