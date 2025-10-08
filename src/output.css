@@ -26,7 +26,6 @@
     --container-sm: 24rem;
     --container-4xl: 56rem;
     --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
