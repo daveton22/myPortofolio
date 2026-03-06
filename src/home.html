@@ -27,7 +27,7 @@
   <body class="scroll-smooth flex flex-col bg-primary w-full">
     <header
       id="header"
-      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full items-center justify-between fixed top-0 z-[9999]"
+      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full items-center justify-between fixed top-0 z-[9999] bg-[#222831]"
     >
       <!-- Navbar -->
       <div
@@ -48,19 +48,19 @@
         class="flex max-md:fixed max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-9 max-md:top-3 menu-closed"
       >
         <ul
-          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-white"
+          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-secondary"
         >
           <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#home" class="underline-animation">Home</a>
+            <a href="#home" class="underline-animation ">Home</a>
           </li>
           <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#about" class="underline-animation">About</a>
+            <a href="#about" class="underline-animation ">About</a>
           </li>
           <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#skills" class="underline-animation">Skills</a>
+            <a href="#skills" class="underline-animation ">Skills</a>
           </li>
           <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#projects" class="underline-animation">Projects</a>
+            <a href="#projects" class="underline-animation ">Projects</a>
           </li>
         </ul>
         <a
@@ -87,52 +87,37 @@
         class="relative w-full h-screen max-md:h-screen max-md:px-4 max-md:py-48 flex flex-col items-center justify-center overflow-hidden"
       >
         <div
-          class="w-full flex items-center justify-between text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+          class="w-full flex items-center justify-center text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
-          <!-- Light/Dark Mode Separate Buttons -->
-          <div
-            class="flex flex-col items-center justify-center max-md:mr-0 gap-3 max-md:hidden"
-          >
-            <button
-              id="light-mode-btn"
-              aria-label="Switch to Light Mode"
-              class="w-10 h-10 rounded-full bg-gray-200 text-yellow-500 flex items-center justify-center shadow-lg hover:bg-yellow-100 transition-colors duration-300 focus:outline-none"
-            >
-              <i class="fa-solid fa-sun"></i>
-            </button>
-            <button
-              id="dark-mode-btn"
-              aria-label="Switch to Dark Mode"
-              class="w-10 h-10 rounded-full bg-gray-800 text-blue-400 flex items-center justify-center shadow-lg hover:bg-gray-700 transition-colors duration-300 focus:outline-none"
-            >
-              <i class="fa-solid fa-moon"></i>
-            </button>
-            <h1
-              class="transform -rotate-90 text-primary font-bold mt-11 text-shadow-lg"
-            >
-              Change theme -
-            </h1>
-          </div>
-          <div class="flex flex-col items-center p-6 max-md:w-full max-md:px-2">
-            <h2
-              class="text-secondary text-[44pt] font-robotoMono uppercase max-md:text-[30pt] leading-14 max-md:leading-[48px] max-md:text-left font-black"
-            >
-              <span
-                class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[22pt] max-md:leading-[30px] max-md:text-center"
-                >Halo, Saya Dave<br
-              /></span>
-              Graphic Designer, <br class="max-md:hidden" />
-              Front End Web Designer, <br class="max-md:hidden" />
-              Video Editing
-            </h2>
+
+        <div class="flex flex-col items-center justify-center">
+  <div class="relative w-80 h-80 max-md:mt-14 max-md:w-56 max-md:h-56">
+    <img
+      src="../dist/profilePicture/fotoprofil.jpeg"
+      alt="Foto Profil"
+      class="w-full h-full rounded-full object-cover border-4 border-white shadow-lg  "
+    />
+
+  </div>
+
+</div>
+          <div class="flex flex-col items-baseline p-6 max-md:w-full max-md:px-2">
+<h2
+  class="text-left text-secondary text-[44pt] font-robotoMono uppercase max-md:text-[30pt] leading-14 max-md:leading-[48px] font-black"
+>
+  <span
+    class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[22pt] max-md:leading-[30px]"
+  >
+    Halo, Saya Dave<br />
+  </span>
+  Graphic Designer & <br class="max-md:hidden" />
+  Video Editing
+</h2>
 
             <p
               class="text-secondary font-light text-[20px] my-3 font-robotoMono max-md:max-w-[95vw] max-md:text-[12px] max-md:leading-[18px] text-shadow-lg max-md:text-left"
             >
-              Mahasiswa Informatika dari Universitas Amikom Yogyakarta dan
-              sedang
-              <br class="max-md:hidden" />
-              fokus dalam mengembangkan skill desain dan editing.
+              Mahasiswa Informatika dari Universitas Amikom Yogyakarta
             </p>
 
             <a
@@ -158,61 +143,6 @@
                 See my Work
               </button>
             </div>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center mt-4 max-md:hidden"
-          >
-            <button
-              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-              onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
-              ;
-            >
-              <i
-                class="fa-brands fa-facebook shadow-lg fa-xl"
-                style="color: #00adb5"
-              ></i>
-            </button>
-            <button
-              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-              onclick="window.open('https://www.instagram.com/dave_farfar/', '_blank')"
-            >
-              <i
-                class="fa-brands fa-instagram shadow-lg fa-xl"
-                style="color: #00adb5"
-              ></i>
-            </button>
-            <button
-              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-              onclick="window.open('https://www.linkedin.com/in/dave-farfar/', '_blank')"
-            >
-              <i
-                class="fa-brands fa-linkedin shadow-lg fa-xl"
-                style="color: #00adb5"
-              ></i>
-            </button>
-            <button
-              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-              onclick="window.open('https://github.com/daveton22', '_blank')"
-            >
-              <i
-                class="fa-brands fa-github shadow-lg fa-xl"
-                style="color: #00adb5"
-              ></i>
-            </button>
-            <button
-              class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[35px] h-[35px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-              onclick="window.open('https://www.youtube.com/@DaveFarfar21', '_blank')"
-            >
-              <i
-                class="fa-brands fa-youtube shadow-lg fa-xl"
-                style="color: #00adb5"
-              ></i>
-            </button>
-            <h1
-              class="transform -rotate-90 text-primary text-shadow-lg font-bold mt-8"
-            >
-              Follow me -
-            </h1>
           </div>
           <!-- <div class="flex justify-center top-24 relative animate-bounce">
             <span
