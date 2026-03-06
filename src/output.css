@@ -1665,6 +1665,11 @@
       line-height: 48px;
     }
   }
+  .max-md\:text-primary {
+    @media (width < 48rem) {
+      color: var(--color-primary);
+    }
+  }
   .max-md\:text-secondary {
     @media (width < 48rem) {
       color: var(--color-secondary);
