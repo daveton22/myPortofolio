@@ -28,7 +28,11 @@
     "icons": "../dist/icon-tools/premiere-pro.png"
   },
   {
-    "name": "After Effects",
+    "name": "AE",
     "icons": "../dist/icon-tools/after-effects.png"
+  },
+  {
+    "name": "Affinity",
+    "icons": "../dist/icon-tools/affinity.png"
   }
 ]
