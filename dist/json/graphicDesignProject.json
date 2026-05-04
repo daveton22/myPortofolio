@@ -41,12 +41,7 @@
   {
     "image": "../dist/posters/12NOV(2).png"
   },
-  {
-    "image": "../dist/posters/14NOV(1).png"
-  },
-  {
-    "image": "../dist/posters/14NOV(2).png"
-  },
+
   {
     "image": "../dist/posters/19NOV(1).png"
   },
@@ -58,5 +53,17 @@
   },
   {
     "image": "../dist/posters/30NOV(2).png"
+  },
+  {
+    "image": "../dist/posters/BANNERPB@2x.png"
+  },
+  {
+    "image": "../dist/posters/BANNERTOPUP.png"
+  },
+  {
+    "image": "../dist/posters/BANNERMAIN@2x.png"
+  },
+  {
+    "image": "../dist/posters/BANNERMLBB@2x.png"
   }
 ]

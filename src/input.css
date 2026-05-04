@@ -18,7 +18,7 @@
   --font-archivo-black: "Archivo Black", sans-serif;
   --font-playwrite-hu: "Playwrite HU", cursive;
   --font-google-sans-code: "Google Sans Code", monospace;
-  --color-primary: #FFFFFF;
+  --color-primary: #ffffff;
   --color-secondary: #171717;
   --color-tertiary: #00adb5;
 
@@ -70,11 +70,15 @@ html {
 @media (max-width: 768px) {
   .menu-closed {
     right: -100vw;
-    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+    transition:
+      transform 0.3s ease-in-out,
+      right 0.3s ease-in-out;
   }
   .menu-open {
     right: 0;
-    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+    transition:
+      transform 0.3s ease-in-out,
+      right 0.3s ease-in-out;
   }
 }
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,37 +45,35 @@
       </button>
       <nav
         id="nav-menu"
-        class="flex max-md:fixed max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-9 max-md:top-3 menu-closed"
+        class="flex max-md:fixed max-md:flex-col max-md:mt-16 max-md:bg-secondary max-md:p- max-md:top-3 menu-closed"
       >
         <ul
-          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-primary"
+          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out text-primary"
         >
-          <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#home" class="underline-animation ">Home</a>
+          <li class="mx-10 max-md:mx-3 max-md:my-4">
+            <a href="#home" class="underline-animation">Home</a>
           </li>
-          <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#about" class="underline-animation ">About</a>
+          <li class="mx-10 max-md:mx-3 max-md:my-4">
+            <a href="#about" class="underline-animation">About</a>
           </li>
-          <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#skills" class="underline-animation ">Skills</a>
+          <li class="mx-10 max-md:mx-3 max-md:my-4">
+            <a href="#skills" class="underline-animation">Skills</a>
           </li>
-          <li class="mx-12 max-md:mx-3 max-md:my-4">
-            <a href="#projects" class="underline-animation ">Projects</a>
+          <li class="mx-10 max-md:mx-3 max-md:my-4">
+            <a href="#projects" class="underline-animation">Projects</a>
           </li>
         </ul>
         <a
           href="../dist/CV/MyCV.pdf"
           download="MyCV.pdf"
           id="cvButton"
-          class="relative font-bold text-primary px-6 py-2 rounded-[2.5rem] mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500 max-md:hidden"
-          onmouseover="hoverLeft()"
-          onmouseout="hoverRight()"
+          class="relative font-bold text-primary px-8 py-2 rounded-[2.5rem] mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500 max-md:hidden"
         >
           <span
             id="hover"
             class="absolute bottom-0 left-0 w-full h-full bg-primary z-0 transition-transform duration-500 transform translate-x-full"
           ></span>
-          <span class="relative z-10"> Download CV </span>
+          <span class="relative z-10 text-[16px]"> Download CV </span>
         </a>
       </nav>
     </header>
@@ -89,30 +87,31 @@
         <div
           class="w-full flex items-center justify-center text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
         >
-
-        <div class="flex flex-col items-center justify-center">
-  <div class="relative w-80 h-80 max-md:mt-14 max-md:w-56 max-md:h-56">
-    <img
-      src="../dist/profilePicture/fotoprofil.jpeg"
-      alt="Foto Profil"
-      class="w-full h-full rounded-full object-cover border-4 border-white shadow-lg  "
-    />
-
-  </div>
-
-</div>
-          <div class="flex flex-col items-baseline p-6 max-md:w-full max-md:px-2">
-<h2
-  class="text-left text-secondary text-[44pt] font-robotoMono uppercase max-md:text-[30pt] leading-14 max-md:leading-[48px] font-black"
->
-  <span
-    class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[22pt] max-md:leading-[30px]"
-  >
-    Halo, Saya Dave<br />
-  </span>
-  Graphic Designer & <br class="max-md:hidden" />
-  Video Editing
-</h2>
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="relative w-80 h-80 max-md:mt-14 max-md:w-56 max-md:h-56"
+            >
+              <img
+                src="../dist/profilePicture/fotoprofil.jpeg"
+                alt="Foto Profil"
+                class="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-baseline p-6 max-md:w-full max-md:px-2"
+          >
+            <h2
+              class="text-left text-secondary text-[44pt] font-robotoMono uppercase max-md:text-[30pt] leading-14 max-md:leading-[48px] font-black"
+            >
+              <span
+                class="text-tertiary font-google-sans-code font-bold text-shadow-lg text-[36pt] text-base/6 max-md:text-[22pt] max-md:leading-[30px]"
+              >
+                Halo, Saya Dave<br />
+              </span>
+              Graphic Designer & <br class="max-md:hidden" />
+              Video Editing
+            </h2>
 
             <p
               class="text-secondary font-light text-[20px] my-3 font-robotoMono max-md:max-w-[95vw] max-md:text-[12px] max-md:leading-[18px] text-shadow-lg max-md:text-left"
@@ -277,24 +276,28 @@
           </div> -->
 
           <article
-            class="ml-9 max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+            class="max-md:m-0 max-md:flex max-md:flex-col max-md:items-center justify-center"
           >
-            <h2 class="text-white font-bold text-4xl">ABOUT ME</h2>
+            <h2 class="text-white font-bold text-4xl text-center">ABOUT ME</h2>
 
-            <h4 class="text-tertiary font-bold text-[14pt] mb-2 max-md:px-10">
+            <h4
+              class="text-tertiary font-bold text-[14pt] mb-2 max-md:px-10 text-center"
+            >
               Graphic Designer & Video Editor
             </h4>
             <p
-              class="text-primary text-[12pt] opacity-85 font-normal w-[500px] mb-1 max-md:text-[13px] max-md:w-[400px] max-md:align-middle max-md:text-left max-md:px-10"
+              class="text-primary text-[12pt] opacity-85 font-normal w-full mb-1 max-md:text-[13px] max-md:w-[400px] max-md:align-middle max-md:text-left max-md:px-10 center text-center"
             >
-              Halo, nama saya Daveton Piesco Far-Far, Saya berasal dari Maluku
-              Tenggara. Saat ini saya menempuh pendidikan sebagai mahasiswa
-              Informatika semester 5 di Universitas Amikom Yogyakarta (angkatan
-              2023). Saya memiliki keahlian di bidang graphic design, seperti
-              pembuatan poster, banner, konten media sosial, serta berbagai
-              kebutuhan desain visual baik digital maupun cetak. Saya telah aktif dalam organisasi kampus, khususnya di bidang media visual
-              dan cetak untuk mendukung berbagai kegiatan serta kebutuhan konten
-              media sosial organisasi dan juga saya saat ini sebagai freelance desain grafis.
+              Halo, nama saya Daveton Piesco Far-Far, Bisa dipanggil Dave. Saya
+              berasal dari Maluku Tenggara dan saat ini saya menempuh pendidikan
+              sebagai mahasiswa Informatika semester 6 di Universitas Amikom
+              Yogyakarta (angkatan 2023). Saya memiliki keahlian di bidang
+              graphic design, seperti pembuatan poster, banner, konten media
+              sosial, serta berbagai kebutuhan desain visual baik digital maupun
+              cetak. Saya telah aktif dalam organisasi kampus, khususnya di
+              bidang media visual dan cetak untuk mendukung berbagai kegiatan
+              serta kebutuhan konten media sosial organisasi dan juga saya saat
+              ini sebagai freelance desain grafis.
             </p>
             <button
               id="readMorebutton"
@@ -305,11 +308,16 @@
             <!-- Social Links -->
             <div
               id="linkList"
-              class="flex mt-4 max-md:flex max-md:justify-center"
+              class="flex mt-4 max-md:flex max-md:justify-center justify-center w-full"
             >
               <button
                 class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9] cursor-pointer"
-                onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+                onclick="
+                  window.open(
+                    'https://www.facebook.com/syntic.loaded',
+                    '_blank',
+                  )
+                "
                 ;
               >
                 <i
@@ -327,14 +335,12 @@
         id="skills"
         class="w-full flex flex-col items-center gap-x-16 bg-secondary font-quickSand"
       >
-        <h2
-          class="text-primary font-bold text-4xl my-10 max-md:mt-[1em]"
-        >
+        <h2 class="text-primary font-bold text-4xl my-10 max-md:mt-[1em]">
           Skills
         </h2>
         <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
-        <div class="flex w-[70%] max-md:w-full max-md:flex-col gap-12 mb-12">
-          <div class="w-full">
+        <div class="flex w-[50%] max-md:w-full max-md:flex-col gap-12 mb-12">
+          <!-- <div class="w-full">
             <h2 class="text-primary text-2xl text-center">
               Front End Languages
             </h2>
@@ -357,13 +363,13 @@
                 </h2>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="w-full max-md:pr-4">
-            <h2 class="text-primary text-2xl text-center">
+            <!-- <h2 class="text-primary text-2xl text-center">
               Editing <br class="hidden max-md:block" />
               Tools
-            </h2>
+            </h2> -->
             <div
               id="tools"
               class="flex flex-wrap w-[70%] max-md:w-full gap-8 max-md:gap-2 m-auto justify-center p-5"
@@ -474,7 +480,15 @@
                 src="https://www.youtube.com/embed/1rDD0ZCFlZ4?si=tkdScXeqsRW_Daj3"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
@@ -498,7 +512,15 @@
                 src="https://www.youtube.com/embed/sSyLYYszl8U?si=iYRPTWk9EVwjocr_"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
@@ -559,14 +581,14 @@
       </section>
 
       <!-- Front end Project -->
-      <section
+      <!-- <section
         id="projects"
         class="w-full flex flex-col items-center h-auto bg-secondary overflow-hidden font-quickSand"
       >
         <h2
           class="text-primary font-bold text-4xl mt-2 mb-[0.5em] max-md:text-2xl"
         >
-          Other Project
+          Other Works
         </h2>
 
         <hr class="w-[50%] border-t-2 border-gray-300 mb-10 max-md:mb-3" />
@@ -602,7 +624,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer
