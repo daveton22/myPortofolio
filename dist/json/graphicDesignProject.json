@@ -1,4 +1,31 @@
 [
+    {
+    "image": "../dist/posters/BANNERPB@2x.png"
+  },
+  {
+    "image": "../dist/posters/BANNERTOPUP.png"
+  },
+  {
+    "image": "../dist/posters/BANNERMAIN@2x.png"
+  },
+  {
+    "image": "../dist/posters/BANNERMLBB@2x.png"
+  },
+  {
+    "image": "../dist/posters/POSTERFLASHSALE.png"
+  },
+  {
+    "image": "../dist/posters/POSTEROPENGB.png"
+  },
+    {
+    "image": "../dist/feed/posterPMB.png"
+  },
+      {
+    "image": "../dist/feed/daftar.png"
+  },
+        {
+    "image": "../dist/feed/ekidoposter.png"
+  },
   {
     "image": "../dist/posters/UIMovieWeb.png"
   },
@@ -53,32 +80,6 @@
   },
   {
     "image": "../dist/posters/30NOV(2).png"
-  },
-  {
-    "image": "../dist/posters/BANNERPB@2x.png"
-  },
-  {
-    "image": "../dist/posters/BANNERTOPUP.png"
-  },
-  {
-    "image": "../dist/posters/BANNERMAIN@2x.png"
-  },
-  {
-    "image": "../dist/posters/BANNERMLBB@2x.png"
-  },
-  {
-    "image": "../dist/posters/POSTERFLASHSALE.png"
-  },
-  {
-    "image": "../dist/posters/POSTEROPENGB.png"
-  },
-    {
-    "image": "../dist/feed/posterPMB.png"
-  },
-      {
-    "image": "../dist/feed/daftar.png"
-  },
-        {
-    "image": "../dist/feed/ekidoposter.png"
   }
+
 ]
