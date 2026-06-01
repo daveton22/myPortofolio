@@ -71,5 +71,14 @@
   },
   {
     "image": "../dist/posters/POSTEROPENGB.png"
+  },
+    {
+    "image": "../dist/feed/posterPMB.png"
+  },
+      {
+    "image": "../dist/feed/daftar.png"
+  },
+        {
+    "image": "../dist/feed/ekidoposter.png"
   }
 ]
