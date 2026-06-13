@@ -1,34 +1,34 @@
 [
   {
     "name": "VSCode",
-    "icons": "../dist/icon-tools/vscode.png"
+    "icons": "../dist/icon-tools/vscode_result.webp"
   },
   {
     "name": "Canva",
-    "icons": "../dist/icon-tools/canva.png"
+    "icons": "../dist/icon-tools/canva_result.webp"
   },
   {
     "name": "Figma",
-    "icons": "../dist/icon-tools/figma.png"
+    "icons": "../dist/icon-tools/figma_result .webp"
   },
   {
     "name": "Illustrator",
-    "icons": "../dist/icon-tools/illustrator.png"
+    "icons": "../dist/icon-tools/illustrator_result.webp"
   },
   {
     "name": "Capcut",
-    "icons": "../dist/icon-tools/capcutLogo.png "
+    "icons": "../dist/icon-tools/capcutLogo_result.webp "
   },
   {
     "name": "PremierePro",
-    "icons": "../dist/icon-tools/premiere-pro.png"
+    "icons": "../dist/icon-tools/premiere-pro_result.webp"
   },
   {
     "name": "AfterEffect",
-    "icons": "../dist/icon-tools/after-effects.png"
+    "icons": "../dist/icon-tools/after-effects_result.webp"
   },
   {
     "name": "Affinity",
-    "icons": "../dist/icon-tools/affinity.png"
+    "icons": "../dist/icon-tools/affinity_result.webp"
   }
 ]
