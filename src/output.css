@@ -1391,6 +1391,11 @@
       background-image: none;
     }
   }
+  .max-md\:p-0 {
+    @media (width < 48rem) {
+      padding: calc(var(--spacing) * 0);
+    }
+  }
   .max-md\:p-2 {
     @media (width < 48rem) {
       padding: calc(var(--spacing) * 2);
