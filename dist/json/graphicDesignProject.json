@@ -1,9 +1,39 @@
 [
   {
+    "image": "../dist/posterabp/startupclinic2.png"
+  },
+  {
+    "image": "../dist/posterabp/startupclinic293.png"
+  },
+  {
+    "image": "../dist/posterabp/startupclinic291.png"
+  },
+  {
+    "image": "../dist/posterabp/startupclinic.png"
+  },
+  {
+    "image": "../dist/posterabp/postermaulidnabi.png"
+  },
+  {
+    "image": "../dist/posterabp/posterHUT81.png"
+  },
+  {
+    "image": "../dist/posterabp/hutLPDB.png"
+  },
+  {
+    "image": "../dist/posterabp/congrats1.png"
+  },
+  {
     "image": "../dist/feed/feedpmb_result.webp"
   },
   {
     "image": "../dist/feed/PMBAMIKOM2_result.webp"
+  },
+  {
+    "image": "../dist/feed/posterPMB_result.webp"
+  },
+  {
+    "image": "../dist/feed/daftar_result.webp"
   },
   {
     "image": "../dist/posters/BANNERPB@2x_result.webp"
@@ -24,11 +54,28 @@
     "image": "../dist/posters/POSTEROPENGB_result.webp"
   },
   {
-    "image": "../dist/feed/posterPMB_result.webp"
+    "image": "../dist/majalah/majalah(9)_result.webp"
   },
   {
-    "image": "../dist/feed/daftar_result.webp"
+    "image": "../dist/posters/12NOV(1)_result.webp"
   },
+  {
+    "image": "../dist/posters/12NOV(2)_result.webp"
+  },
+
+  {
+    "image": "../dist/posters/19NOV(1)_result.webp"
+  },
+  {
+    "image": "../dist/posters/20NOV(2)_result.webp"
+  },
+  {
+    "image": "../dist/posters/30NOV(1)_result.webp"
+  },
+  {
+    "image": "../dist/posters/30NOV(2)_result.webp"
+  },
+
   {
     "image": "../dist/feed/ekidoposter_result.webp"
   },
@@ -64,27 +111,5 @@
   },
   {
     "image": "../dist/majalah/majalah(8)_result.webp"
-  },
-  {
-    "image": "../dist/majalah/majalah(9)_result.webp"
-  },
-  {
-    "image": "../dist/posters/12NOV(1)_result.webp"
-  },
-  {
-    "image": "../dist/posters/12NOV(2)_result.webp"
-  },
-
-  {
-    "image": "../dist/posters/19NOV(1)_result.webp"
-  },
-  {
-    "image": "../dist/posters/20NOV(2)_result.webp"
-  },
-  {
-    "image": "../dist/posters/30NOV(1)_result.webp"
-  },
-  {
-    "image": "../dist/posters/30NOV(2)_result.webp"
   }
 ]
